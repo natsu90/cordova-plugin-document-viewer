@@ -349,7 +349,7 @@ public final class DocumentViewerPlugin
             if (PDF.equals(contentType))
             {
                 if (canGetFile(url))
-                {
+                {   /*
                     if (!this._appIsInstalled(packageId))
                     {
                         successObj.put(Result.STATUS,
@@ -359,10 +359,10 @@ public final class DocumentViewerPlugin
                     }
                     else
                     {
-                        successObj.put(Result.STATUS,
+                    */   successObj.put(Result.STATUS,
                                 PluginResult.Status.OK.ordinal()
                         );
-                    }
+                    //}
                 }
                 else
                 {
